@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">IComp Manager</string>
+    <string name="login">Login:</string>
+    <string name="user">Senha:</string>
+    <string name="enter">Entrar</string>
+    <string name="message">Digite suas credenciais para continuar.</string>
+    <string name="configs">Configuração</string>
+    <string name="about">Sobre</string>
+    <string name="textBemVindo">textBemVindo</string>
+    <string name="addName">Nome</string>
+    <string name="addTitle">Senha</string>
+    <string name="newUser">Criar Usuário</string>
+    <string name="docID">ID</string>
+    <string name="addTitleDoc">Documento</string>
+    <string name="addData">DD/MM/AAAA</string>
+    <string name="textDocID">ID</string>
+    <string name="addTitleUsers">Usuário</string>
+</resources>

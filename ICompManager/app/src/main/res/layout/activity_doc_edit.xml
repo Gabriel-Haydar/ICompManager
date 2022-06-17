@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DocEditActivity">
+
+    <ImageView
+        android:id="@+id/imageNotes4"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:tint="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/addName"
+        app:layout_constraintEnd_toEndOf="@+id/imageNotes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageNotes"
+        app:layout_constraintTop_toTopOf="@+id/addName"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+    <ImageView
+        android:id="@+id/imageNotes3"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:tint="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/addArmazenamentoCompleto"
+        app:layout_constraintEnd_toEndOf="@+id/imageNotes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imagePassword"
+        app:layout_constraintTop_toTopOf="@+id/addArmazenamentoCompleto"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_my_location_24" />
+
+    <ImageView
+        android:id="@+id/imageNotes2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:tint="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/addArmazenamento"
+        app:layout_constraintEnd_toEndOf="@+id/imageNotes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageNotes"
+        app:layout_constraintTop_toTopOf="@+id/addArmazenamento"
+        app:srcCompat="@drawable/ic_baseline_edit_location_24" />
+
+    <EditText
+        android:id="@+id/addArmazenamentoCompleto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Local de Armazenamento Completo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/addFunction"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addName"
+        app:layout_constraintTop_toBottomOf="@+id/addArmazenamento" />
+
+    <EditText
+        android:id="@+id/addArmazenamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Local de Armazenamento"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/addFunction"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addName"
+        app:layout_constraintTop_toBottomOf="@+id/addNotes" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_icomp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/addTitleDoc"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    ▣ XML do slide anterior
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:tint="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/addFunction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addFunction"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <EditText
+        android:id="@+id/addFunction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Interessado"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addName"
+        app:layout_constraintStart_toStartOf="@+id/addName"
+        app:layout_constraintTop_toBottomOf="@+id/addName" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="@string/addData"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:tint="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/addPassword"
+        app:layout_constraintEnd_toEndOf="@+id/imageLogin"
+        app:layout_constraintStart_toStartOf="@+id/imageLogin"
+        app:layout_constraintTop_toTopOf="@+id/addPassword"
+        app:srcCompat="@drawable/ic_baseline_vpn_key_24" />
+
+    <EditText
+        android:id="@+id/addPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Tipo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/addFunction"
+        app:layout_constraintStart_toStartOf="@+id/addName"
+        app:layout_constraintTop_toBottomOf="@+id/addFunction" />
+
+    <ImageView
+        android:id="@+id/imageNotes"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:tint="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageLogin"
+        app:layout_constraintStart_toStartOf="@+id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@+id/imagePassword"
+        app:srcCompat="@drawable/ic_baseline_note_24" />
+
+    <EditText
+        android:id="@+id/addNotes"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/addPassword"
+        app:layout_constraintStart_toStartOf="@+id/addPassword"
+        app:layout_constraintTop_toBottomOf="@+id/addPassword" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="salvarClicado"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="@+id/addArmazenamentoCompleto"
+        app:layout_constraintStart_toStartOf="@+id/imageNotes3"
+        app:layout_constraintTop_toBottomOf="@+id/addArmazenamentoCompleto" />
+
+    <TextView
+        android:id="@+id/textDocId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/textDocID"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="removerClicado"
+        android:text="Remover"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSave"
+        app:layout_constraintStart_toStartOf="@+id/buttonSave"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
